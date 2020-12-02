@@ -1,0 +1,21 @@
+
+
+//..............Script............Add More Remove More............
+
+
+<script type="text/javascript">
+	var coun =0;
+	$(document).on('click','.add_hours',function(){
+
+	  var hole_html = $('.add_more').html();
+
+	  $('.hours-info').append(hole_html);
+	  count++;
+
+	});
+
+	$(document).on('click','.remove_hours',function(){
+		$(this).closest('.remove_more').remove();
+		count--;
+	});
+</script>
